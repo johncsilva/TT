@@ -627,7 +627,7 @@ begin
         ' Msg de erro:' + e.Message),
         'Erro', MB_OK OR MB_ICONERROR
       );
-      Halt(1);
+      TerminateProcess(GetCurrentProcess, 0);
     end;
   End;
 end;

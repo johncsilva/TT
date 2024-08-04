@@ -26,7 +26,6 @@ object MainView: TMainView
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitLeft = 3
     object lbProduto: TLabel
       Left = 32
       Top = 9
@@ -173,7 +172,6 @@ object MainView: TMainView
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitTop = 569
     object lbTotalPedido: TLabel
       AlignWithMargins = True
       Left = 3
@@ -204,9 +202,6 @@ object MainView: TMainView
       ShowHint = True
       TabOrder = 1
       OnClick = btnGravarPedidoClick
-      ExplicitLeft = 720
-      ExplicitTop = 6
-      ExplicitHeight = 28
     end
     object btnNovoPedido: TButton
       AlignWithMargins = True
@@ -223,9 +218,6 @@ object MainView: TMainView
       ShowHint = True
       TabOrder = 0
       OnClick = btnNovoPedidoClick
-      ExplicitLeft = 516
-      ExplicitTop = 6
-      ExplicitHeight = 28
     end
   end
   object pnlDadosCliente: TPanel
@@ -236,7 +228,6 @@ object MainView: TMainView
     Align = alTop
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitTop = 3
     object lbCliente: TLabel
       Left = 38
       Top = 13
@@ -404,7 +395,7 @@ object MainView: TMainView
     Left = 462
     Top = 288
     Bitmap = {
-      494C010101000800040010001000FFFFFFFFFF00FFFFFFFFFFFFFFFF424D3600
+      494C010101000800040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       000000000000000000000000000000000000000000FF99999900C2C2C2000000
       00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
@@ -540,6 +531,7 @@ object MainView: TMainView
       07FF00000000000083FF000000000000C30F000000000000E003000000000000
       F9F1000000000000FBF9000000000000F3FC000000000000F0FC000000000000
       F0FC000000000000F0FC000000000000F819000000000000F831000000000000
-      FC03000000000000FF0F000000000000}
+      FC03000000000000FF0F00000000000000000000000000000000000000000000
+      000000000000}
   end
 end
