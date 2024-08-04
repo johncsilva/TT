@@ -1,10 +1,6 @@
 program TesteWK;
 
 uses
-  madExcept,
-  madLinkDisAsm,
-  madListProcesses,
-  madListModules,
   Winapi.Windows,
   Vcl.Forms,
   Vcl.Dialogs,
