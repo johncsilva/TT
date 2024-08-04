@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/06/28 17:39:03.000.115,=C:\Users\johnc\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2024/08/02 18:57:37.000.304,=C:\Users\johnc\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2024/08/02 19:03:30.000.412,C:\Dev\WK\Views\uMain.pas=C:\Users\johnc\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2024/08/02 19:03:30.000.412,C:\Dev\WK\Views\uMain.dfm=C:\Users\johnc\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit6.dfm</Transaction>
+    <Transaction>2024/08/02 19:03:51.000.454,C:\Dev\WK\TesteWK.dproj=C:\Users\johnc\OneDrive\Documentos\Embarcadero\Studio\Projects\Project6.dproj</Transaction>
+    <Transaction>2024/08/02 19:07:34.000.933,C:\Dev\WK\Views\uMain.View.dfm=C:\Dev\WK\Views\uMain.dfm</Transaction>
+    <Transaction>2024/08/02 19:07:34.000.933,C:\Dev\WK\Views\uMain.View.pas=C:\Dev\WK\Views\uMain.pas</Transaction>
+    <Transaction>2024/08/02 19:08:32.000.795,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:08:58.000.623,C:\Dev\WK\Models\uProduto.Model.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:11:00.000.532,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:11:23.000.431,C:\Dev\WK\Controllers\uProduto.Controller.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:16:50.000.838,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:17:07.000.142,C:\Dev\WK\Models\uCliente.Model.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:17:15.000.173,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:17:26.000.221,C:\Dev\WK\uPedido.Model.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:18:53.000.078,=C:\Dev\WK\Models\uPedido.Model.pas</Transaction>
+    <Transaction>2024/08/02 19:20:47.000.457,=C:\Dev\WK\Controllers\uCliente.Controller.pas</Transaction>
+    <Transaction>2024/08/02 19:21:06.000.092,=C:\Dev\WK\Controllers\uPedido.Controller.pas</Transaction>
+    <Transaction>2024/08/02 19:40:28.000.580,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:41:12.000.035,C:\Dev\WK\Unit1.pas=C:\Dev\WK\Data\Connection.Factory.pas</Transaction>
+    <Transaction>2024/08/02 19:41:34.000.547,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:41:52.000.604,C:\Dev\WK\Unit1.pas=C:\Dev\WK\Data\uConnection.Interfaces.pas</Transaction>
+    <Transaction>2024/08/02 19:41:59.000.207,C:\Dev\WK\Data\Connection.Factory.pas=C:\Dev\WK\Data\uConnection.Factory.pas</Transaction>
+    <Transaction>2024/08/02 19:45:02.000.182,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 19:45:32.000.570,C:\Dev\WK\Unit1.pas=C:\Dev\WK\Service\uClienteService.pas</Transaction>
+    <Transaction>2024/08/02 19:46:01.000.687,C:\Dev\WK\Models\uCliente.Model.pas=C:\Dev\WK\Models\uCliente.DTO.pas</Transaction>
+    <Transaction>2024/08/02 19:46:10.000.818,C:\Dev\WK\Models\uPedido.Model.pas=C:\Dev\WK\Models\uPedido.DTO.pas</Transaction>
+    <Transaction>2024/08/02 19:46:16.000.972,C:\Dev\WK\Models\uProduto.Model.pas=C:\Dev\WK\Models\uProduto.DTO.pas</Transaction>
+    <Transaction>2024/08/02 19:50:30.000.014,C:\Dev\WK\Service\uClienteService.pas=C:\Dev\WK\Service\uCliente.Service.pas</Transaction>
+    <Transaction>2024/08/02 20:37:24.000.423,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 20:39:07.000.274,C:\Dev\WK\Controllers\uMain.Controller.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 22:33:49.000.426,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 22:34:23.000.785,C:\Dev\WK\Service\uProduto.Service.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 22:45:51.000.974,C:\Dev\WK\Data\uConnection.Interfaces.pas=</Transaction>
+    <Transaction>2024/08/02 22:57:01.000.562,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/02 22:57:21.000.385,C:\Dev\WK\Unit1.pas=C:\Dev\WK\Service\uPedido.Service.pas</Transaction>
+    <Transaction>2024/08/03 15:06:41.000.608,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/03 15:07:44.000.680,C:\Dev\WK\Unit1.pas=C:\Dev\WK\Utils\uPedido.DTO.Helpers.pas</Transaction>
+    <Transaction>2024/08/03 17:07:49.536,=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/03 17:08:25.461,C:\Dev\WK\Views\uProcura.View.dfm=C:\Dev\WK\Unit1.dfm</Transaction>
+    <Transaction>2024/08/03 17:08:25.461,C:\Dev\WK\Views\uProcura.View.pas=C:\Dev\WK\Unit1.pas</Transaction>
+    <Transaction>2024/08/04 16:49:22.668,C:\Dev\WK\Controllers\uMain.Controller.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
