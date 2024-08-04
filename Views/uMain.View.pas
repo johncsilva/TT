@@ -82,6 +82,7 @@ type
     procedure edtClienteExit(Sender: TObject);
     procedure edtClienteKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure edtPrecoVendaChange(Sender: TObject);
+    procedure edtPrecoVendaEnter(Sender: TObject);
     procedure edtPrecoVendaExit(Sender: TObject);
     procedure edtPrecoVendaKeyPress(Sender: TObject; var Key: Char);
     procedure edtProdutoChange(Sender: TObject);
@@ -123,6 +124,7 @@ type
     procedure CriarNovoPedido(const APedeConfirmacao : boolean = False);
     procedure ProcurarCliente;
     procedure ProcurarProduto;
+    procedure TratarEntradaEdit(Sender: TObject);
   public
   end;
 
@@ -624,7 +626,7 @@ begin
     begin
       Application.MessageBox(
         PWideChar('Não foi possível conectar ao banco de dados. Verifique suas configurações.' + sLineBreak +
-        ' Msg de erro:' + e.Message),
+        'Msg de erro:' + e.Message),
         'Erro', MB_OK OR MB_ICONERROR
       );
       TerminateProcess(GetCurrentProcess, 0);
@@ -666,6 +668,23 @@ begin
     ProcurarCliente;
 end;
 
+procedure TMainView.edtPrecoVendaEnter(Sender: TObject);
+begin
+  TratarEntradaEdit(Sender);
+end;
+
+procedure TMainView.TratarEntradaEdit(Sender: TObject);
+var
+  edit  : TEdit absolute Sender;
+  Value : Double;
+begin
+  if TryStrToFloat(StringReplace(edit.Text, '.', '', [rfReplaceAll]), Value) then
+  begin
+    edit.Text := FloatToStr(Value);
+  end;
+  edit.SelectAll;
+end;
+
 procedure TMainView.edtPrecoVendaExit(Sender: TObject);
 begin
   ValidarValorExit(Sender);
@@ -686,7 +705,7 @@ end;
 
 procedure TMainView.edtQuantidadeEnter(Sender: TObject);
 begin
- //
+  TratarEntradaEdit(Sender);
 end;
 
 procedure TMainView.FormClose(Sender: TObject; var Action: TCloseAction);

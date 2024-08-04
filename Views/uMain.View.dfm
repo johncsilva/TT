@@ -111,6 +111,7 @@ object MainView: TMainView
       TabOrder = 3
       TextHint = 'Digite o valor unit'#225'rio..'
       OnChange = edtPrecoVendaChange
+      OnEnter = edtPrecoVendaEnter
       OnExit = edtPrecoVendaExit
       OnKeyPress = edtPrecoVendaKeyPress
     end
