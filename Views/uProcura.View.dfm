@@ -44,19 +44,18 @@ object ProcuraView: TProcuraView
       Left = 3
       Top = 10
       Width = 145
-      Height = 23
+      Height = 28
       Margins.Top = 10
       Align = alLeft
       Style = csDropDownList
       TabOrder = 0
-      ExplicitLeft = 341
     end
     object cbbTipoPesquisa: TComboBox
       AlignWithMargins = True
       Left = 154
       Top = 10
       Width = 145
-      Height = 23
+      Height = 28
       Margins.Top = 10
       Align = alLeft
       Style = csDropDownList
@@ -68,8 +67,6 @@ object ProcuraView: TProcuraView
         'Cont'#233'm'
         'Come'#231'a com'
         'Termina com')
-      ExplicitLeft = 187
-      ExplicitTop = 12
     end
     object btnBuscar: TButton
       AlignWithMargins = True

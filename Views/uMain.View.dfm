@@ -336,7 +336,6 @@ object MainView: TMainView
   end
   object tbItensPedido: TFDMemTable
     BeforeInsert = tbItensPedidoBeforeInsert
-    AfterPost = tbItensPedidoAfterPost
     BeforeDelete = tbItensPedidoBeforeDelete
     OnCalcFields = tbItensPedidoCalcFields
     FieldDefs = <>
@@ -389,6 +388,8 @@ object MainView: TMainView
   end
   object dsItensPedido: TDataSource
     DataSet = tbItensPedido
+    OnStateChange = dsItensPedidoStateChange
+    OnDataChange = dsItensPedidoDataChange
     Left = 396
     Top = 288
   end

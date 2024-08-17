@@ -78,6 +78,8 @@ type
     procedure btnInserirProdutoClick(Sender: TObject);
     procedure btnProcuraClienteClick(Sender: TObject);
     procedure btnProcuraProdutoClick(Sender: TObject);
+    procedure dsItensPedidoDataChange(Sender: TObject; Field: TField);
+    procedure dsItensPedidoStateChange(Sender: TObject);
     procedure edtClienteChange(Sender: TObject);
     procedure edtClienteExit(Sender: TObject);
     procedure edtClienteKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -99,7 +101,6 @@ type
     procedure gridItensPedidoEnter(Sender: TObject);
     procedure gridItensPedidoExit(Sender: TObject);
     procedure gridItensPedidoKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure tbItensPedidoAfterPost(DataSet: TDataSet);
     procedure tbItensPedidoBeforeDelete(DataSet: TDataSet);
     procedure tbItensPedidoBeforeInsert(DataSet: TDataSet);
     procedure tbItensPedidoCalcFields(DataSet: TDataSet);
@@ -324,6 +325,19 @@ end;
 procedure TMainView.btnProcuraProdutoClick(Sender: TObject);
 begin
   ProcurarProduto;
+end;
+
+procedure TMainView.dsItensPedidoDataChange(Sender: TObject; Field: TField);
+begin
+  lbTotalPedido.Caption := 'Total do Pedido: R$ ' + FormatFloat(getFormatoFloat, 0);
+  if not VarisNull(tbItensPedido.Aggregates[0].Value) then
+    lbTotalPedido.Caption := 'Total do Pedido: R$ ' + FormatFloat(getFormatoFloat, tbItensPedido.Aggregates[0].Value);
+end;
+
+procedure TMainView.dsItensPedidoStateChange(Sender: TObject);
+begin
+  //if not VarisNull(tbItensPedido.Aggregates[0].Value) then
+  //  lbTotalPedido.Caption := 'Total do Pedido: R$ ' + FormatFloat(getFormatoFloat, tbItensPedido.Aggregates[0].Value);
 end;
 
 procedure TMainView.ProcurarProduto;
@@ -760,11 +774,6 @@ begin
   FieldProdutosValorTotal.DisplayFormat    := getFormatoFloat;
   btnInserirProduto.Enabled                := False;
   lbTotalPedido.Caption                    := 'Total do Pedido: R$ 0,00';
-end;
-
-procedure TMainView.tbItensPedidoAfterPost(DataSet: TDataSet);
-begin
-  lbTotalPedido.Caption := 'Total do Pedido: R$ ' + FormatFloat(getFormatoFloat, tbItensPedido.Aggregates[0].Value);
 end;
 
 procedure TMainView.tbItensPedidoBeforeDelete(DataSet: TDataSet);
